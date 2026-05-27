@@ -147,12 +147,8 @@ The standard Keras Hub GPT-2 cannot accept embeddings directly. Our implementati
 
 ### Loss Function
 
-```python
-Total Loss = α * Classification Loss 
-           + β * Frontal Reconstruction Loss 
-           + γ * Lateral Reconstruction Loss 
-           + δ * Text Generation Loss
-```
+$$\mathcal{L}_{Total} = \alpha \cdot \mathcal{L}_{Classification} + \beta \cdot \mathcal{L}_{Frontal\_Reconstruction} + \gamma \cdot \mathcal{L}_{Lateral\_Reconstruction} + \delta \cdot \mathcal{L}_{Text\_Generation}$$
+
 
 **Final Component Losses:**
 - Classification: 0.4384
